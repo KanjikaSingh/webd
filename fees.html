@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+           font-family: 'Ubuntu', sans-serif;
+       }
+       .floater {
+           background-color: white;
+           height: 30px;
+           padding-top: 7px;
+           width: 100%;
+           margin-bottom: 0px;
+       }
+
+       .heading {
+           background-color: white;
+           opacity: 0.95;
+           height: 120px;
+           width: 100%;
+           margin-top: -15px;
+           float: left;
+           text-align: center;
+       }
+
+       .navbar {
+           background-color: black;
+           color: white;
+           height: 55px;
+           width: 100%;
+           margin-top: -22px;
+           opacity: 0.82;
+
+       }
+
+       .navbar {
+           overflow: auto;
+       }
+
+       .navbar li {
+           float: left;
+       }
+
+       .navbar li a {
+           padding: 5px 20px;
+           text-decoration: none;
+           color: white;
+       }
+
+       .qwerty {
+           float: right;
+           /* background-color: rgb(205, 203, 203); */
+           background-color: white;
+           color: black;
+       }
+
+       .logo {
+           float: left;
+           padding-top: 20px;
+           margin-left: 30px;
+           margin-top: 10px;
+       }
+
+       .clgname {
+           margin-left: -20px;
+           padding-top: 20px;
+           font-weight: bolder;
+           text-align: center;
+       }
+
+       .profileimage {
+           padding-right: 10px;
+
+       }
+       #profile a {
+           padding-left: 10px;
+       }
+
+       .stickyone {
+           position: sticky;
+           top: 0;
+       }
+       .dropdown {
+           float: left;
+           overflow: auto;
+           margin-top: -13px;
+
+       }
+
+
+       .dropdown .dropbtn {
+           font-size: 16px;
+           border: none;
+           outline: none;
+           color: white;
+           padding: 14px 16px;
+           background-color: black;
+           margin: 0;
+       }
+
+       .navbar a:hover,
+       .dropdown:hover .dropbtn {
+           background-color: black;
+           color: lightblue;
+       }
+
+       .dropdown-content {
+           display: none;
+           position: absolute;
+           background-color: black;
+           min-width: 160px;
+           box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+           z-index: 1;
+       }
+
+       /* Links inside the dropdown */
+       .dropdown-content a {
+           float: none;
+           color: white;
+           padding: 12px 16px;
+           text-decoration: none;
+           display: block;
+           text-align: left;
+       }
+
+       .dropdown:hover .dropdown-content {
+           display: block;
+       }
+       .arrow{
+           font-size: 10px;
+           margin-top: -8px;
+       }
+       h3{
+        font-family:'Times New Roman', Times, serif;
+        color:black;
+       }
+       h5{
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        color:rgb(4, 4, 121);
+       }
+       h4{
+        font-family:'Times New Roman', Times, serif;
+        font-size:xx-large;
+        color:rgb(97, 0, 0);
+       }
+       
+       .btn {
+      /* padding: 10px 50px; */
+      font-size: 16px;
+      cursor: pointer;
+      background-color:red;
+      opacity: 0.82;
+      color: white;
+      border-radius: 2px;
+    }
+    .fees{
+        /* width:fit-content; */
+        /* margin:auto; */
+        /* clear:both; */
+    }
+   </style>
+</head>
+<body>
+    <div class="floater">
+        <marquee class="qwerty" id="moving" width="100%" height="20px" direction="left" onmouseover="this.stop()"
+            onmouseout="this.start()">
+            <div>This website is currently an unofficial one but is for the betterment of the funcitonality of the hostel chores, and our aim is to get this into use officially!</div>
+        </marquee>
+    </div>
+    <div class="stickyone">
+        <div class="heading sticky">
+            <img src="logo.png" width="70px" height="70px" class="logo">
+            <h1 class="clgname">BMS EDUCATIONAL TRUST HOSTELS</h1>
+        </div>
+        <nav class="navbar">
+            <ul type="none">
+                <li><a href="#">NOTIFICATIONS</a></li>
+                <li><a href="#">WARDEN DETAILS</a></li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn">MESS
+                            <span class="arrow">&#8744</span>
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#">Menu</a>
+                            <a href="#">Suggestion Form</a>
+                        </div>
+                </li>
+                <li><a href="#">FEE PAYMENT</a></li>
+                <li><a href="#">COMPLAINTS</a></li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn">APPLICATIONS 
+                            <span class="arrow">&#8744</span>
+                            <!-- <i class="fa fa-caret-down"></i> -->
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#">Leave Application</a>
+                            <a href="#">Late Coming Application</a>
+                        </div>
+                </li>
+                <li style="float: right;" id="profile"><a href="#">PROFILE</a></li>
+                <li style="float: right;">
+                    <img src="download.png"height="30px" width="30px" class="profileimage"
+                        style="margin-top:-5px;">
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="fees">
+        <h1>Fees Payment</h1>
+        <h3>{{StudentName}} Fees Details</h3>
+        <table border="1">
+            <tr>
+                <th>Academic year</th>
+            </tr>
+            <tr>
+                <td>2022</td>
+            </tr>
+            <tr>
+                <td>2021</td>
+            </tr>
+            <tr>
+                <td>2020</td>
+            </tr>
+        </table>
+
+        <u><h4 >Hostel Fees</h4></u>
+        <table border="1">
+            <tr>
+                <td><h5>Amount to be paid</h5></td>
+                <td>10000000</td>
+            </tr>
+            <tr>
+                <td><h5>Balance amount</h5></td>
+                <td>1000000</td>
+            </tr>
+        </table>
+        <button  class="btn">Pay now!!!</button>
+        <u><h4>Mess Fees</h4></u>
+        <table border="1">
+            <tr>
+                <td><h5>Amount to be paid</h5></td>
+                <td>100000</td>
+            </tr>
+            <tr>
+                <td><h5>Balance amount</h5></td>
+                <td>1000</td>
+            </tr>
+        </table>
+        <button  class="btn">Pay now!!!</button>
+        <u><h4>Late Fees</h4></u>
+        <table border="1">
+            <tr>
+                <td><h5>Amount to be paid</h5></td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td><h5>Balance amount</h5></td>
+                <td>0</td>
+            </tr>
+        </table>
+        <button class="btn">Pay now!!!</button>
+    </div>
+    <div class="floater">
+        <marquee class="qwerty" id="moving" width="100%" height="20px" direction="left" onmouseover="this.stop()"
+            onmouseout="this.start()">
+            <div> Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur necessitatibus laborum eos sint. Nam corrupti optio minus. Porro harum eligendi, iusto ipsum voluptatum mollitia quasi tempore libero exercitationem fugit vitae?</div>
+        </marquee>
+    </div>
+</body>
+</html>

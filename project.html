@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <div class="title">
+        <div class="page">
+            <div class="floater">
+              <marquee
+                behavior="scroll"
+                direction="left"
+                onmouseover="this.stop()"
+                onmouseout="this.start()"
+                >This website is currently an unofficial one but is for the betterment of the funcitonality of the hostel chores, and our aim is to get this into use officially!</marquee
+              >
+            </div>
+        <div class="logo"><img src="logo.png" class="log" /></div>
+        <div class="t1"><h1>B.M.S. EDUCATIONAL TRUST HOSTELS</h1></div>
+        <div class="Website">
+            <button class="btn" onClick="">Website</button>
+            
+        </div>
+    </div>
+    
+        <style>
+            body,html{
+                height:120%;
+                width:100%;
+                background-image:linear-gradient(white,rgb(31, 127, 211));
+            }
+
+            .floater {
+      /* background-color: white; */
+      height: 30px;
+      padding: 7px;
+    }
+    .btn {
+      padding: 10px 50px;
+      font-size: 16px;
+      cursor: pointer;
+      background-color: black;
+      opacity: 0.82;
+      color: white;
+      border-radius: 15px;
+    }
+    
+    
+           .log {
+            /* width:5px; */
+            height:98px;
+            float: left;
+           margin-left: 30px;
+            margin-top: 5px;
+    }
+            .t1{ 
+                width:fit-content;
+                margin: 10px auto;
+                /* border: 1px solid red; */
+                
+
+            }
+            .Website{
+                margin-top: -100px;
+                width:fit-content;
+                float: right;
+                clear:left;
+            }
+            .container{
+                width:80%;
+                height:650px;
+                border: 2px solid black;
+                
+                margin:auto;
+                margin-top:65px;
+                background-image:linear-gradient( rgb(32, 174, 179),white);
+            }
+            .photos{
+                width:49%;
+                height:98%;
+                float:left;
+                /* border:2px solid black; */
+                /* margin-top:2px; */
+                margin-left:5px;
+                /* border-right: 2px solid black; */
+                clear:right;
+                /* background-image:linear-gradient( rgb(32, 174, 179),white); */
+                
+            }
+            .sign{
+                width:49%;
+                height:100%;
+                float:right;
+                /* border-left:2px solid black; */
+                /* margin-top:4px; */
+                margin-right:5px;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-size: xx-large;
+                /* background-image:linear-gradient( white,rgb(32, 174, 179)); */
+
+            }
+            h2{
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                text-align: center;
+                font-size: xx-large;
+                color:rgb(5, 5, 62);
+            };
+            .forms{
+                width:fit-content;
+                /* margin-left:auto; */
+                font-style: oblique;
+                font-family:Georgia, 'Times New Roman', Times, serif;
+                color:rgba(11, 11, 174, 0.903);
+                font-size:xx-large ;
+                text-align:center;
+                /* float:right;
+                 */
+                 margin:auto;
+                
+                
+            }
+            input{
+                padding: 10px 150px;
+            }
+            #submit{
+                margin-left:50px;
+                padding:7px 150px;
+                
+      /* padding: 10px 50px; */
+      font-size: 16px;
+      cursor: pointer;
+      background-color: black;
+      opacity: 0.82;
+      color: white;
+      border-radius: 15px;
+    }
+                
+            
+           
+              h3{
+                font-family: inherit;
+                 font-size: 25px;
+                 margin-left:240px;
+                 margin-top:150px;
+              } 
+            .img{
+                width:100%;
+                height:100%;
+                margin:4px auto;
+                
+
+            }
+            label{
+               margin:auto;
+            }
+         
+            
+        </style>
+        <title>Sign-in Page</title>
+</head>
+<body>
+   
+  
+    <div class="container">
+        
+        <div class="photos">
+            <img src="hostel.jpeg" class="img" alt="hostel photos">
+        </div>
+        <div class="sign">
+            <h2 >
+                Student Sign in
+            </h2>
+            <div class="forms">
+            <form >
+                <label for="usn">USN</label>
+                <br>
+                <input type="text" placeholder="Enter your USN here">
+                <br>
+                <label for="pass">Password</label>
+                <br>
+                <input type="password" placeholder="Enter your Password here">
+                <br>
+                <br>
+                
+                <input type="submit" id="submit">
+            </form>
+            <br>
+            <br>
+            <br>
+
+
+            <h3 >
+                For any queries
+           
+            <a href="">Contact us</a> </h3>
+             </div>
+             
+             
+
+             </div>
+            </div>
+    
+</body>
+</html>
